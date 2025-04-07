@@ -6,18 +6,20 @@
 ## File Structure
 ```
 De-drijvende-stad
+├── css/                      # Folder for CSS files
+│   └── styles.css            # Styles for the website
+├── js/                       # Folder for JavaScript files (currently empty)
+├── activiteiten.html         # Details on activities available
 ├── index.html                # Main page with an overview and navigation
 ├── praktische-informatie.html # Practical information about visiting
-├── activiteiten.html         # Details on activities available
 ├── reviews.html              # Visitor reviews and experiences
-├── styles.css                # Styles for the website
 └── README.md                 # Project documentation
 ```
 
 ## Setup Instructions
 1. Clone the repository or download the project files.
 2. Ensure you have a local server environment set up (e.g., XAMPP, WAMP).
-3. Place the project folder in the server's root directory (e.g., `c:\xampp\htdocs\`).
+3. Place the project folder in the server's root directory (e.g., `c:\xampp\htdocs\Web\Examens\De drijvende stad - flevoland\`).
 4. Open your web browser and navigate to `http://localhost/De-drijvende-stad/index.html` to view the website.
 
 ## Usage
