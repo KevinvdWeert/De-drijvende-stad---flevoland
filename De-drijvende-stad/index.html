@@ -3,48 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Drijvende Stad - Praktische Informatie</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="description" content="Welkom bij De Drijvende Stad - ontdek de unieke ervaring van wonen en leven op het water in Flevoland. Bekijk activiteiten, beoordelingen en praktische informatie.">
+    <meta name="keywords" content="Drijvende Stad, Flevoland, wonen op water, activiteiten, beoordelingen, praktische informatie">
+    <meta name="author" content="De Drijvende Stad">
+    <title>De Drijvende Stad - Wonen en Leven op het Water</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="page-home">
-    <header id="main-header">
-        <h1 class="page-title">De Drijvende Stad</h1>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
-                <li><a href="activiteiten.html">Activiteiten</a></li>
-                <li><a href="reviews.html">Beoordelingen</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-            </ul>
-        </nav>
+<body>
+    <header id="main-header" role="banner">
+        <div class="container">
+            <h1 class="page-title">De Drijvende Stad</h1>
+            <nav class="main-nav" role="navigation" aria-label="Hoofdmenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
+                    <li><a href="activiteiten.html">Activiteiten</a></li>
+                    <li><a href="reviews.html">Beoordelingen</a></li>
+                    <li><a href="overzicht.html">Overzicht</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main id="content">
-        <section id="hero">
-            <h1>Welkom bij De Drijvende Stad</h1>
-            <p>Ontdek de unieke ervaring van wonen en leven op het water.</p>
-            <a href="praktische-informatie.html" class="nav-button">Meer Informatie</a>
-        </section>
-        <section class="grid-layout">
-            <div>
-                <h2>Activiteiten</h2>
-                <p>Geniet van diverse activiteiten zoals varen, vissen en meer.</p>
-                <a href="activiteiten.html" class="nav-button">Lees Meer</a>
+    <main id="content" role="main">
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h2>Welkom bij De Drijvende Stad</h2>
+                <p>Ervaar een futuristische stad op het water, waar duurzaamheid en technologie centraal staan. Maak kennis met de nieuwste trends op het gebied van groene energie, ecologisch bouwen en innovatie.</p>
+                <img src="assets/images/hero-image.jpg" alt="De Drijvende Stad" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
+                <a href="overzicht.html" class="nav-button">Overzicht</a>
+                <a href="praktische-informatie.html" class="nav-button">Praktische Informatie</a>
+                <a href="activiteiten.html" class="nav-button">Activiteiten</a>
+                <a href="reviews.html" class="nav-button">Reviews</a>
             </div>
-            <div>
-                <h2>Beoordelingen</h2>
-                <p>Lees wat anderen zeggen over hun ervaring in De Drijvende Stad.</p>
-                <a href="reviews.html" class="nav-button">Lees Beoordelingen</a>
+        </section>
+        
+        <section id="features" class="grid-layout">
+            <div class="container">
+                <article>
+                    <img src="assets/images/activiteiten.jpg" alt="Activiteiten" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+                    <h3>Activiteiten</h3>
+                    <p>Geniet van diverse activiteiten zoals varen, vissen en meer.</p>
+                    <a href="activiteiten.html" class="nav-button">Lees Meer</a>
+                </article>
+                <article>
+                    <img src="assets/images/reviews.jpg" alt="Beoordelingen" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
+                    <h3>Beoordelingen</h3>
+                    <p>Lees wat anderen zeggen over hun ervaring in De Drijvende Stad.</p>
+                    <a href="reviews.html" class="nav-button">Lees Beoordelingen</a>
+                </article>
             </div>
         </section>
     </main>
     
-    <footer id="main-footer">
-        <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
-        <p>Contact: info@dedrijvendestad.nl | Telefoon: +31 123 456 789</p>
+    <footer id="main-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
+            <p>Contact: <a href="mailto:info@dedrijvendestad.nl">info@dedrijvendestad.nl</a> | Telefoon: <a href="tel:+31123456789">+31 123 456 789</a></p>
+        </div>
     </footer>
-    <button id="backToTop" class="nav-button" title="Terug naar boven">↑</button>
-    <script src="./assets/js/script.js"></script>
+    
+    <button id="backToTop" class="nav-button" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
