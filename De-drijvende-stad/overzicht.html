@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Drijvende Stad - Overzicht</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>Overzicht</h1>
-        <nav>
-            <ul>
+<body class="page-overzicht">
+    <header id="main-header">
+        <h1 class="page-title">Overzicht</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
                 <li><a href="activiteiten.html">Activiteiten</a></li>
                 <li><a href="reviews.html">Beoordelingen</a></li>
+                <li><a href="overzicht.html">Overzicht</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="overzicht">
-            <h2>Welkom bij De Drijvende Stad</h2>
-            <p>De Drijvende Stad is een unieke bestemming in Flevoland waar bezoekers kunnen genieten van diverse activiteiten en evenementen op en rond het water.</p>
+    
+    <main id="content">
+        <section class="grid-layout">
+            <div>
+                <h2>Woningen</h2>
+                <p>Bekijk de verschillende soorten woningen op het water.</p>
+            </div>
+            <div>
+                <h2>Faciliteiten</h2>
+                <p>Ontdek de faciliteiten die beschikbaar zijn in De Drijvende Stad.</p>
+            </div>
         </section>
     </main>
-    <footer>
+    
+    <footer id="main-footer">
         <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
+        <p>Contact: info@dedrijvendestad.nl | Telefoon: +31 123 456 789</p>
     </footer>
-    <button id="backToTop" title="Terug naar boven">↑</button>
-    <script src="script.js"></script>
+    <button id="backToTop" class="nav-button" title="Terug naar boven">↑</button>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

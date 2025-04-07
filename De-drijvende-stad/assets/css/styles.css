@@ -99,7 +99,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.cta-button {
+.nav-button {
     background: #ffcc00;
     color: #000;
     padding: 10px 20px;
@@ -108,7 +108,7 @@ footer {
     border-radius: 5px;
 }
 
-.cta-button:hover {
+.nav-button:hover {
     background: #e6b800;
 }
 

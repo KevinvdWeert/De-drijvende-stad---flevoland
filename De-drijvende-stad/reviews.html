@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Drijvende Stad - Beoordelingen</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body>
-    <header>
-        <h1>Beoordelingen</h1>
-        <nav>
-            <ul>
+<body class="page-reviews">
+    <header id="main-header">
+        <h1 class="page-title">Beoordelingen</h1>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
                 <li><a href="activiteiten.html">Activiteiten</a></li>
                 <li><a href="reviews.html">Beoordelingen</a></li>
+                <li><a href="overzicht.html">Overzicht</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="reviews">
-            <h2>Wat onze bezoekers zeggen</h2>
-            <p>"Een geweldige ervaring! De rondvaart was prachtig en de workshops waren zeer leerzaam." - Jan</p>
-            <p>"Een unieke plek om te bezoeken. De sfeer is fantastisch!" - Maria</p>
-            <p>"Zeer informatief en leuk voor het hele gezin. We komen zeker terug!" - Peter</p>
+    
+    <main id="content">
+        <section class="review-section">
+            <article class="review visible">
+                <h2>Jan Jansen</h2>
+                <p>Een geweldige ervaring! De Drijvende Stad is echt uniek.</p>
+            </article>
+            <article class="review visible">
+                <h2>Maria de Vries</h2>
+                <p>Ik heb genoten van de activiteiten en de prachtige omgeving.</p>
+            </article>
         </section>
     </main>
-    <footer>
+    
+    <footer id="main-footer">
         <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
+        <p>Contact: info@dedrijvendestad.nl | Telefoon: +31 123 456 789</p>
     </footer>
-    <button id="backToTop" title="Terug naar boven">↑</button>
-    <script src="script.js"></script>
+    <button id="backToTop" class="nav-button" title="Terug naar boven">↑</button>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
