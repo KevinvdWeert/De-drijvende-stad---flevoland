@@ -3,67 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welkom bij De Drijvende Stad - ontdek de unieke ervaring van wonen en leven op het water in Flevoland. Bekijk activiteiten, beoordelingen en praktische informatie.">
-    <meta name="keywords" content="Drijvende Stad, Flevoland, wonen op water, activiteiten, beoordelingen, praktische informatie">
+    <meta name="description" content="Bezoek De Drijvende Stad in Flevoland, een futuristische stad op het water. Ontdek activiteiten, beoordelingen, en praktische informatie.">
+    <meta name="keywords" content="Drijvende Stad, Flevoland, activiteiten, beoordelingen, praktische informatie, duurzaam bouwen, boottocht, waterwoningen, ecotoerisme">
     <meta name="author" content="De Drijvende Stad">
-    <title>De Drijvende Stad - Wonen en Leven op het Water</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dedrijvendestad.nl">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="De Drijvende Stad - Wonen en Leven op het Water">
+    <meta property="og:description" content="Ontdek de unieke ervaring van wonen en leven op het water in Flevoland. Bekijk activiteiten, beoordelingen en praktische informatie.">
+    <meta property="og:image" content="https://www.dedrijvendestad.nl/assets/images/hero-image.jpg">
+    <meta property="og:url" content="https://www.dedrijvendestad.nl">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="De Drijvende Stad - Wonen en Leven op het Water">
+    <meta name="twitter:description" content="Ontdek de unieke ervaring van wonen en leven op het water in Flevoland. Bekijk activiteiten, beoordelingen en praktische informatie.">
+    <meta name="twitter:image" content="https://www.dedrijvendestad.nl/assets/images/hero-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <title>De Drijvende Stad - Wonen en Leven op het Water | Flevoland</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "De Drijvende Stad",
+        "description": "Een futuristische stad op het water in Flevoland, waar duurzaamheid en technologie centraal staan.",
+        "image": "https://www.dedrijvendestad.nl/assets/images/hero-image.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Waterweg 5",
+            "addressLocality": "Lelystad",
+            "postalCode": "8200 AB",
+            "addressRegion": "Flevoland",
+            "addressCountry": "NL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "52.518536",
+            "longitude": "5.471422"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "telephone": "+31 123 456 789",
+        "email": "info@dedrijvendestad.nl",
+        "url": "https://www.dedrijvendestad.nl",
+        "priceRange": "€€",
+        "sameAs": [
+            "https://www.facebook.com/dedrijvendestad",
+            "https://www.instagram.com/dedrijvendestad",
+            "https://www.linkedin.com/company/dedrijvendestad"
+        ]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#content">Direct naar inhoud</a>
+    
     <header id="main-header" role="banner">
         <div class="container">
             <h1 class="page-title">De Drijvende Stad</h1>
-            <nav class="main-nav" role="navigation" aria-label="Hoofdmenu">
+            <button id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="menu-icon">☰</span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
                 <ul class="nav-list">
                     <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
+                    <li><a href="overzicht.html">Overzicht</a></li>
                     <li><a href="activiteiten.html">Activiteiten</a></li>
                     <li><a href="reviews.html">Beoordelingen</a></li>
-                    <li><a href="overzicht.html">Overzicht</a></li>
+                    <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
     <main id="content" role="main">
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero-section" aria-labelledby="hero-heading">
             <div class="container">
-                <h2>Welkom bij De Drijvende Stad</h2>
-                <p>Ervaar een futuristische stad op het water, waar duurzaamheid en technologie centraal staan. Maak kennis met de nieuwste trends op het gebied van groene energie, ecologisch bouwen en innovatie.</p>
-                <img src="assets/images/hero-image.jpg" alt="De Drijvende Stad" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 20px;">
-                <a href="overzicht.html" class="nav-button">Overzicht</a>
-                <a href="praktische-informatie.html" class="nav-button">Praktische Informatie</a>
-                <a href="activiteiten.html" class="nav-button">Activiteiten</a>
-                <a href="reviews.html" class="nav-button">Reviews</a>
+                <h1 id="hero-heading">Welkom bij De Drijvende Stad</h1>
+                <p class="hero-text">Ervaar een futuristische stad op het water, waar duurzaamheid en technologie centraal staan. Maak kennis met de nieuwste trends op het gebied van groene energie, ecologisch bouwen en innovatie.</p>
+                <div class="hero-buttons">
+                    <a href="overzicht.html" class="nav-button">Ontdek Ons Verhaal</a>
+                    <a href="praktische-informatie.html" class="nav-button secondary">Plan Je Bezoek</a>
+                </div>
             </div>
         </section>
         
-        <section id="features" class="grid-layout">
+        <section id="features" class="feature-section" aria-labelledby="feature-heading">
             <div class="container">
-                <article>
-                    <img src="assets/images/activiteiten.jpg" alt="Activiteiten" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-                    <h3>Activiteiten</h3>
-                    <p>Geniet van diverse activiteiten zoals varen, vissen en meer.</p>
-                    <a href="activiteiten.html" class="nav-button">Lees Meer</a>
-                </article>
-                <article>
-                    <img src="assets/images/reviews.jpg" alt="Beoordelingen" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-                    <h3>Beoordelingen</h3>
-                    <p>Lees wat anderen zeggen over hun ervaring in De Drijvende Stad.</p>
-                    <a href="reviews.html" class="nav-button">Lees Beoordelingen</a>
-                </article>
+                <h2 id="feature-heading" class="section-title">Ontdek De Drijvende Stad</h2>
+                <div class="grid-layout">
+                    <article class="feature-card" aria-labelledby="activiteiten-heading">
+                        <img src="assets/images/activiteiten.jpg" alt="Mensen die genieten van activiteiten op het water" width="400" height="300" loading="lazy">
+                        <div class="card-content">
+                            <h3 id="activiteiten-heading">Activiteiten</h3>
+                            <p>Geniet van diverse activiteiten zoals varen, vissen, waterfietsen en rondleidingen door onze duurzame architectuur.</p>
+                            <a href="activiteiten.html" class="nav-button">Bekijk Activiteiten</a>
+                        </div>
+                    </article>
+                    
+                    <article class="feature-card" aria-labelledby="reviews-heading">
+                        <img src="assets/images/reviews.jpg" alt="Gelukkige bezoekers in de Drijvende Stad" width="400" height="300" loading="lazy">
+                        <div class="card-content">
+                            <h3 id="reviews-heading">Beoordelingen</h3>
+                            <p>Lees wat anderen zeggen over hun unieke ervaring in De Drijvende Stad. Onze gasten delen hun verhalen.</p>
+                            <a href="reviews.html" class="nav-button">Lees Beoordelingen</a>
+                        </div>
+                    </article>
+                    
+                    <article class="feature-card" aria-labelledby="duurzaamheid-heading">
+                        <img src="assets/images/duurzaamheid.jpg" alt="Duurzame technologie in de Drijvende Stad" width="400" height="300" loading="lazy">
+                        <div class="card-content">
+                            <h3 id="duurzaamheid-heading">Duurzaamheid</h3>
+                            <p>Ontdek onze innovatieve oplossingen voor energie, waterbeheer en ecologisch wonen op het water.</p>
+                            <a href="duurzaamheid.html" class="nav-button">Onze Technologie</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content">
+                    <h2 id="about-heading" class="section-title">Over De Drijvende Stad</h2>
+                    <p>De Drijvende Stad in Flevoland is een baanbrekend project dat laat zien hoe we in harmonie met het water kunnen leven. Onze stad combineert geavanceerde technologie met natuurlijke schoonheid om een unieke leefomgeving te creëren.</p>
+                    <ul class="about-features">
+                        <li>100% zelfvoorzienend qua energie</li>
+                        <li>Innovatief waterbeheersysteem</li>
+                        <li>Ecologisch verantwoorde bouwmaterialen</li>
+                        <li>Unieke woon- en werkervaring</li>
+                    </ul>
+                    <a href="overzicht.html" class="nav-button">Meer Over Ons</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about.jpg" alt="Luchtfoto van De Drijvende Stad" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <section id="cta" class="cta-section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading" class="section-title">Klaar voor een unieke ervaring?</h2>
+                <p>Boek je bezoek aan De Drijvende Stad vandaag nog en ontdek de toekomst van duurzaam wonen op het water.</p>
+                <div class="cta-buttons">
+                    <a href="tickets.html" class="nav-button">Tickets Boeken</a>
+                    <a href="contact.html" class="nav-button secondary">Neem Contact Op</a>
+                </div>
             </div>
         </section>
     </main>
     
     <footer id="main-footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
-            <p>Contact: <a href="mailto:info@dedrijvendestad.nl">info@dedrijvendestad.nl</a> | Telefoon: <a href="tel:+31123456789">+31 123 456 789</a></p>
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Over De Drijvende Stad</h3>
+                    <p>Een innovatief project in Flevoland dat laat zien hoe we in harmonie met het water kunnen leven en werken.</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigatie">
+                    <h3>Snelle links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="overzicht.html">Overzicht</a></li>
+                        <li><a href="praktische-informatie.html">Praktische Info</a></li>
+                        <li><a href="activiteiten.html">Activiteiten</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-contact">
+                    <h3>Contactgegevens</h3>
+                    <address>
+                        Waterweg 5<br>
+                        8200 AB Lelystad<br>
+                        Flevoland, Nederland
+                    </address>
+                    <p>
+                        <a href="tel:+31123456789">+31 123 456 789</a><br>
+                        <a href="mailto:info@dedrijvendestad.nl">info@dedrijvendestad.nl</a>
+                    </p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Volg ons</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dedrijvendestad" aria-label="Facebook"><span class="sr-only">Facebook</span>f</a></li>
+                        <li><a href="https://instagram.com/dedrijvendestad" aria-label="Instagram"><span class="sr-only">Instagram</span>📷</a></li>
+                        <li><a href="https://twitter.com/dedrijvendestad" aria-label="Twitter"><span class="sr-only">Twitter</span>𝕏</a></li>
+                        <li><a href="https://linkedin.com/company/dedrijvendestad" aria-label="LinkedIn"><span class="sr-only">LinkedIn</span>in</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
+                <ul class="legal-links">
+                    <li><a href="privacy.html">Privacybeleid</a></li>
+                    <li><a href="cookies.html">Cookiebeleid</a></li>
+                    <li><a href="voorwaarden.html">Algemene Voorwaarden</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     
-    <button id="backToTop" class="nav-button" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
+    <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
+    
     <script src="assets/js/script.js"></script>
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Add more interactive functionality as needed
+    </script>
 </body>
 </html>

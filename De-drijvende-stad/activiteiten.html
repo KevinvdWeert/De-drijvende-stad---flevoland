@@ -3,64 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activiteiten - De Drijvende Stad</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="description" content="Ontdek alle activiteiten in De Drijvende Stad: workshops over duurzaam bouwen, energiebeurzen en unieke boottochten op het water.">
+    <meta name="keywords" content="activiteiten Drijvende Stad, workshops duurzaam bouwen, energiebeurs Flevoland, boottochten waterstad, ecologische technologie">
+    <meta name="author" content="De Drijvende Stad">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dedrijvendestad.nl/activiteiten.html">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Activiteiten - Workshops & Boottochten | De Drijvende Stad">
+    <meta property="og:description" content="Ontdek unieke activiteiten in De Drijvende Stad: van duurzame workshops tot verrassende boottochten.">
+    <meta property="og:image" content="https://www.dedrijvendestad.nl/assets/images/activities-social.jpg">
+    <meta property="og:url" content="https://www.dedrijvendestad.nl/activiteiten.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Activiteiten - Workshops & Boottochten | De Drijvende Stad">
+    <meta name="twitter:description" content="Ontdek unieke activiteiten in De Drijvende Stad: van duurzame workshops tot verrassende boottochten.">
+    <meta name="twitter:image" content="https://www.dedrijvendestad.nl/assets/images/activities-social.jpg">
+    
+    <title>Activiteiten - Workshops & Boottochten | De Drijvende Stad</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EventSeries",
+        "name": "Activiteiten in De Drijvende Stad",
+        "description": "Diverse workshops, beurzen en boottochten in de unieke waterstad van Flevoland",
+        "image": "https://www.dedrijvendestad.nl/assets/images/activities.jpg",
+        "location": {
+            "@type": "Place",
+            "name": "De Drijvende Stad",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Waterweg 5",
+                "addressLocality": "Lelystad",
+                "postalCode": "8200 AB",
+                "addressCountry": "NL"
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "url": "https://www.dedrijvendestad.nl/activiteiten.html",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "events": [
+            {
+                "@type": "Event",
+                "name": "Duurzaam Bouwen Workshop",
+                "startDate": "2025-01-15T14:00",
+                "endDate": "2025-01-15T16:00",
+                "description": "Leer alles over de principes van duurzaam bouwen in de Drijvende Stad."
+            },
+            {
+                "@type": "Event",
+                "name": "Energiebeurs",
+                "startDate": "2025-02-03T10:00",
+                "endDate": "2025-02-03T17:00",
+                "description": "Ontdek de laatste innovaties in hernieuwbare energie en duurzame technologieën."
+            }
+        ]
+    }
+    </script>
 </head>
-<body class="page-activiteiten">
-    <header id="main-header">
-        <h1 class="page-title">Activiteiten</h1>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
-                <li><a href="activiteiten.html">Activiteiten</a></li>
-                <li><a href="reviews.html">Beoordelingen</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-            </ul>
-        </nav>
+<body class="page-activities">
+    <a class="skip-link" href="#main-content">Direct naar inhoud</a>
+    
+    <header id="main-header" role="banner">
+        <div class="container">
+            <h1 class="page-title">De Drijvende Stad</h1>
+            <button id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="menu-icon">☰</span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overzicht.html">Overzicht</a></li>
+                    <li><a href="activiteiten.html" aria-current="page">Activiteiten</a></li>
+                    <li><a href="reviews.html">Beoordelingen</a></li>
+                    <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main id="content">
-        <section>
-            <h2>Activiteiten</h2>
-            <ul>
-                <li>
-                    <img src="assets/images/workshop.jpg" alt="Duurzaam Bouwen Workshop" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-                    <h3>Duurzaam Bouwen Workshop</h3>
-                    <p>Datum: Elke dinsdag</p>
-                    <p>Tijd: 14:00 - 16:00</p>
-                    <p>Leer alles over de principes van duurzaam bouwen in de Drijvende Stad.</p>
-                </li>
-                <li>
-                    <img src="assets/images/energy-fair.jpg" alt="Energiebeurs" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-                    <h3>Energiebeurs</h3>
-                    <p>Datum: Elke eerste zaterdag van de maand</p>
-                    <p>Tijd: 10:00 - 17:00</p>
-                    <p>Ontdek de laatste innovaties in hernieuwbare energie en duurzame technologieën.</p>
-                </li>
-                <li>
-                    <img src="assets/images/boat-tour.jpg" alt="Boottocht Rond de Stad" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-                    <h3>Boottocht Rond de Stad</h3>
-                    <p>Datum: Dagelijks</p>
-                    <p>Tijd: 11:00 - 12:00, 13:00 - 14:00</p>
-                    <p>Maak een rondvaart rond de Drijvende Stad en leer over de ecologische technologieën die het mogelijk maken.</p>
-                </li>
-            </ul>
+    <main id="main-content" role="main">
+        <section class="hero-section activities-hero" aria-labelledby="activities-heading">
+            <div class="container">
+                <h1 id="activities-heading">Onze Activiteiten</h1>
+                <p class="hero-text">Ontdek workshops, beurzen en unieke ervaringen in onze waterstad</p>
+            </div>
         </section>
-        <section>
-            <h2>Veelgestelde Vragen</h2>
-            <ul>
-                <li>Is de boottocht geschikt voor jonge kinderen? Ja, kinderen zijn welkom, maar houd rekening met het weer.</li>
-                <li>Moet ik reserveren voor de energiebeurs? Nee, maar het is wel handig om van tevoren te registreren.</li>
-            </ul>
+        
+        <section class="activities-section" aria-labelledby="featured-activities">
+            <div class="container">
+                <h2 id="featured-activities" class="section-title">Uitgelichte Activiteiten</h2>
+                <div class="activities-grid">
+                    <article class="activity-card" aria-labelledby="workshop-heading">
+                        <div class="card-image">
+                            <img src="assets/images/workshop.jpg" alt="Workshop over duurzaam bouwen" width="600" height="400" loading="lazy">
+                            <div class="date-badge">
+                                <span class="day">Dinsdag</span>
+                                <span class="time">14:00-16:00</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 id="workshop-heading">Duurzaam Bouwen Workshop</h3>
+                            <p>Leer alles over de principes van duurzaam bouwen in de Drijvende Stad. Onze experts delen hun kennis over ecologische materialen en innovatieve waterarchitectuur.</p>
+                            <ul class="activity-details">
+                                <li>📍 Workshopruimte 2</li>
+                                <li>👥 Max. 12 personen</li>
+                                <li>🎟️ €15 per persoon</li>
+                            </ul>
+                            <a href="workshop-aanmelden.html" class="nav-button">Aanmelden</a>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card" aria-labelledby="fair-heading">
+                        <div class="card-image">
+                            <img src="assets/images/energy-fair.jpg" alt="Energiebeurs in De Drijvende Stad" width="600" height="400" loading="lazy">
+                            <div class="date-badge">
+                                <span class="day">Eerste zaterdag</span>
+                                <span class="time">10:00-17:00</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 id="fair-heading">Energiebeurs</h3>
+                            <p>Ontdek de laatste innovaties in hernieuwbare energie en duurzame technologieën. Meer dan 30 standhouders presenteren hun oplossingen voor een groene toekomst.</p>
+                            <ul class="activity-details">
+                                <li>📍 Centrale Hal</li>
+                                <li>👥 Vrije inloop</li>
+                                <li>🎟️ Gratis toegang</li>
+                            </ul>
+                            <a href="beurs-info.html" class="nav-button">Meer Info</a>
+                        </div>
+                    </article>
+                    
+                    <article class="activity-card" aria-labelledby="tour-heading">
+                        <div class="card-image">
+                            <img src="assets/images/boat-tour.jpg" alt="Boottocht rond De Drijvende Stad" width="600" height="400" loading="lazy">
+                            <div class="date-badge">
+                                <span class="day">Dagelijks</span>
+                                <span class="time">11:00 & 13:00</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 id="tour-heading">Boottocht Rond de Stad</h3>
+                            <p>Maak een rondvaart rond de Drijvende Stad en leer over de ecologische technologieën die het mogelijk maken. Onze gidsen delen interessante weetjes over de architectuur.</p>
+                            <ul class="activity-details">
+                                <li>📍 Hoofdsteiger</li>
+                                <li>👥 Max. 20 per boot</li>
+                                <li>🎟️ €12,50 per persoon</li>
+                            </ul>
+                            <a href="boottocht-boeken.html" class="nav-button">Boeken</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section class="calendar-section" aria-labelledby="calendar-heading">
+            <div class="container">
+                <h2 id="calendar-heading" class="section-title">Activiteitenkalender</h2>
+                <div class="calendar-container">
+                    <div class="month-nav">
+                        <button aria-label="Vorige maand">&lt;</button>
+                        <h3>Januari 2025</h3>
+                        <button aria-label="Volgende maand">&gt;</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <!-- Calendar days would be generated by JavaScript -->
+                        <div class="calendar-day">
+                            <span class="day-number">15</span>
+                            <span class="event-indicator" aria-label="Workshop duurzaam bouwen om 14:00"></span>
+                        </div>
+                        <!-- More calendar days would follow -->
+                    </div>
+                </div>
+                <div class="calendar-events">
+                    <h3>Komende evenementen</h3>
+                    <ul class="event-list">
+                        <li>
+                            <span class="event-date">15 jan</span>
+                            <span class="event-title">Workshop Duurzaam Bouwen</span>
+                            <span class="event-time">14:00-16:00</span>
+                        </li>
+                        <li>
+                            <span class="event-date">18 jan</span>
+                            <span class="event-title">Themarondleiding Waterbeheer</span>
+                            <span class="event-time">11:00-12:30</span>
+                        </li>
+                        <li>
+                            <span class="event-date">3 feb</span>
+                            <span class="event-title">Maandelijkse Energiebeurs</span>
+                            <span class="event-time">10:00-17:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading" class="section-title">Veelgestelde Vragen</h2>
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>Is de boottocht geschikt voor jonge kinderen?</summary>
+                        <p>Ja, kinderen zijn welkom op onze boottochten. We raden aan om rekening te houden met het weer en voor voldoende bescherming tegen zon en wind te zorgen. Voor kinderen onder de 4 jaar zijn speciale reddingsvestjes beschikbaar.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Moet ik reserveren voor de energiebeurs?</summary>
+                        <p>Reserveren is niet verplicht voor de energiebeurs, maar registratie vooraf wordt aanbevolen. Geregistreerde bezoekers krijgen voorrang bij drukke tijden en ontvangen aanvullende informatie over de stands.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Zijn de workshops geschikt voor beginners?</summary>
+                        <p>Absoluut! Onze workshops zijn ontworpen om toegankelijk te zijn voor iedereen, ongeacht hun voorkennis. We bieden verschillende niveaus van verdieping aan tijdens de sessies.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Wat is de annuleringspolicy voor geboekte activiteiten?</summary>
+                        <p>Annuleringen kunnen kosteloos worden doorgevoerd tot 48 uur voor de geboekte activiteit. Daarna rekenen we 50% van de kosten aan. Bij no-shows wordt het volledige bedrag in rekening gebracht.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section" aria-labelledby="newsletter-heading">
+            <div class="container">
+                <h2 id="newsletter-heading" class="section-title">Blijf op de hoogte</h2>
+                <p>Meld je aan voor onze nieuwsbrief en ontvang als eerste informatie over nieuwe activiteiten en speciale evenementen.</p>
+                <form class="newsletter-form" aria-label="Nieuwsbrief inschrijving">
+                    <label for="email" class="sr-only">E-mailadres</label>
+                    <input type="email" id="email" name="email" placeholder="Jouw e-mailadres" required>
+                    <button type="submit" class="nav-button">Aanmelden</button>
+                </form>
+            </div>
         </section>
     </main>
     
-    <footer id="main-footer">
-        <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
-        <p>Contact: info@dedrijvendestad.nl | Telefoon: +31 123 456 789</p>
+    <footer id="main-footer" role="contentinfo">
+        <!-- Same footer as index.html -->
     </footer>
-    <button id="backToTop" class="nav-button" title="Terug naar boven">↑</button>
-    <script src="./assets/js/script.js"></script>
+    
+    <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

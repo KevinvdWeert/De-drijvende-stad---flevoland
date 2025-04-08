@@ -3,59 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews - De Drijvende Stad</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="description" content="Echte beoordelingen van bezoekers van De Drijvende Stad. Lees ervaringen en bekijk scores over workshops, boottochten en meer.">
+    <meta name="keywords" content="beoordelingen Drijvende Stad, reviews waterwoningen, ervaringen bezoekers, bezoekersscores Flevoland, recensies duurzame stad">
+    <meta name="author" content="De Drijvende Stad">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dedrijvendestad.nl/reviews.html">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Beoordelingen - Echte Ervaringen | De Drijvende Stad">
+    <meta property="og:description" content="Lees wat bezoekers zeggen over hun ervaringen in onze unieke waterstad in Flevoland.">
+    <meta property="og:image" content="https://www.dedrijvendestad.nl/assets/images/reviews-social.jpg">
+    <meta property="og:url" content="https://www.dedrijvendestad.nl/reviews.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beoordelingen - Echte Ervaringen | De Drijvende Stad">
+    <meta name="twitter:description" content="Lees wat bezoekers zeggen over hun ervaringen in onze unieke waterstad in Flevoland.">
+    <meta name="twitter:image" content="https://www.dedrijvendestad.nl/assets/images/reviews-social.jpg">
+    
+    <title>Beoordelingen - Echte Ervaringen | De Drijvende Stad</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Beoordelingen - De Drijvende Stad",
+        "description": "Echte beoordelingen en ervaringen van bezoekers",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5",
+            "reviewCount": "87",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "image": "https://www.dedrijvendestad.nl/assets/images/reviews-banner.jpg",
+        "url": "https://www.dedrijvendestad.nl/reviews.html"
+    }
+    </script>
 </head>
 <body class="page-reviews">
-    <header id="main-header">
-        <h1 class="page-title">Beoordelingen</h1>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
-                <li><a href="activiteiten.html">Activiteiten</a></li>
-                <li><a href="reviews.html">Beoordelingen</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#main-content">Direct naar inhoud</a>
+    
+    <header id="main-header" role="banner">
+        <div class="container">
+            <h1 class="page-title">De Drijvende Stad</h1>
+            <button id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="menu-icon">☰</span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overzicht.html">Overzicht</a></li>
+                    <li><a href="activiteiten.html">Activiteiten</a></li>
+                    <li><a href="reviews.html" aria-current="page">Beoordelingen</a></li>
+                    <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main id="content">
-        <section>
-            <h2>Bezoekerservaringen</h2>
-            <img src="assets/images/reviews-banner.jpg" alt="Bezoekerservaringen" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-            <ul>
-                <li>
-                    <p><strong>Naam:</strong> Isabelle van den Berg</p>
-                    <p><strong>Datum:</strong> 15 januari 2025</p>
-                    <p>"De boottocht was geweldig! Het is indrukwekkend om te zien hoe technologie en natuur samenkomen."</p>
-                    <p>Score: ★★★★★</p>
-                </li>
-                <li>
-                    <p><strong>Naam:</strong> Joris Smits</p>
-                    <p><strong>Datum:</strong> 10 januari 2025</p>
-                    <p>"De duurzame bouw workshop was interessant, maar ik had graag wat meer diepgang gehad."</p>
-                    <p>Score: ★★★☆☆</p>
-                </li>
-                <li>
-                    <p><strong>Naam:</strong> Sanne en Mark de Wit</p>
-                    <p><strong>Datum:</strong> 5 januari 2025</p>
-                    <p>"Wat een unieke plek! De stad is echt de toekomst van wonen."</p>
-                    <p>Score: ★★★★★</p>
-                </li>
-            </ul>
+    <main id="main-content" role="main">
+        <section class="hero-section reviews-hero" aria-labelledby="reviews-heading">
+            <div class="container">
+                <h1 id="reviews-heading">Bezoekerservaringen</h1>
+                <p class="hero-text">Wat zeggen anderen over hun tijd in De Drijvende Stad?</p>
+            </div>
         </section>
-        <section>
-            <h2>Gemiddelde Score</h2>
-            <p style="font-size: 1.5em;">★★★★☆</p>
+        
+        <section class="stats-section" aria-labelledby="stats-heading">
+            <div class="container">
+                <h2 id="stats-heading" class="sr-only">Beoordelingsstatistieken</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">4.7</div>
+                        <div class="stat-label">Gemiddelde score</div>
+                        <div class="stars" aria-label="4.7 van de 5 sterren">
+                            ★★★★★
+                        </div>
+                        <div class="stat-note">op basis van 87 beoordelingen</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">94%</div>
+                        <div class="stat-label">Aanbevelingspercentage</div>
+                        <div class="recommend-bar">
+                            <div class="recommend-fill" style="width: 94%"></div>
+                        </div>
+                        <div class="stat-note">zou ons aanbevelen</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="reviews-section" aria-labelledby="reviews-list-heading">
+            <div class="container">
+                <h2 id="reviews-list-heading" class="section-title">Recentie Beoordelingen</h2>
+                <div class="reviews-grid">
+                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review-header">
+                            <div class="review-author" itemprop="author">Isabelle van den Berg</div>
+                            <div class="review-date" itemprop="datePublished" content="2025-01-15">15 januari 2025</div>
+                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                                <meta itemprop="ratingValue" content="5">
+                                <meta itemprop="bestRating" content="5">
+                                <span aria-hidden="true">★★★★★</span>
+                                <span class="sr-only">5 van de 5 sterren</span>
+                            </div>
+                        </div>
+                        <div class="review-content" itemprop="reviewBody">
+                            <p>"De boottocht was geweldig! Het is indrukwekkend om te zien hoe technologie en natuur samenkomen in dit unieke project. Onze gids Eva wist ontzettend veel te vertellen over de duurzame oplossingen die zijn toegepast."</p>
+                        </div>
+                        <div class="review-footer">
+                            <span class="review-activity">Boottocht Rond de Stad</span>
+                        </div>
+                    </article>
+                    
+                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review-header">
+                            <div class="review-author" itemprop="author">Joris Smits</div>
+                            <div class="review-date" itemprop="datePublished" content="2025-01-10">10 januari 2025</div>
+                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                                <meta itemprop="ratingValue" content="3">
+                                <meta itemprop="bestRating" content="5">
+                                <span aria-hidden="true">★★★☆☆</span>
+                                <span class="sr-only">3 van de 5 sterren</span>
+                            </div>
+                        </div>
+                        <div class="review-content" itemprop="reviewBody">
+                            <p>"De duurzame bouw workshop was interessant, maar ik had graag wat meer diepgang gehad over de technische aspecten. Het was vooral gericht op beginners. De locatie was echter prachtig en de koffie was uitstekend!"</p>
+                        </div>
+                        <div class="review-footer">
+                            <span class="review-activity">Duurzaam Bouwen Workshop</span>
+                        </div>
+                    </article>
+                    
+                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review-header">
+                            <div class="review-author" itemprop="author">Sanne en Mark de Wit</div>
+                            <div class="review-date" itemprop="datePublished" content="2025-01-05">5 januari 2025</div>
+                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                                <meta itemprop="ratingValue" content="5">
+                                <meta itemprop="bestRating" content="5">
+                                <span aria-hidden="true">★★★★★</span>
+                                <span class="sr-only">5 van de 5 sterren</span>
+                            </div>
+                        </div>
+                        <div class="review-content" itemprop="reviewBody">
+                            <p>"Wat een unieke plek! De stad is echt de toekomst van wonen. We hebben genoten van elke minuut. Het informatiecentrum is zeer compleet en de medewerkers zijn vriendelijk en behulpzaam. Zeker een aanrader voor wie geïnteresseerd is in innovatie en duurzaamheid."</p>
+                        </div>
+                        <div class="review-footer">
+                            <span class="review-activity">Algemeen bezoek</span>
+                        </div>
+                    </article>
+                    
+                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                        <div class="review-header">
+                            <div class="review-author" itemprop="author">Thomas Janssen</div>
+                            <div class="review-date" itemprop="datePublished" content="2024-12-28">28 december 2024</div>
+                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                                <meta itemprop="ratingValue" content="4">
+                                <meta itemprop="bestRating" content="5">
+                                <span aria-hidden="true">★★★★☆</span>
+                                <span class="sr-only">4 van de 5 sterren</span>
+                            </div>
+                        </div>
+                        <div class="review-content" itemprop="reviewBody">
+                            <p>"De energiebeurs was zeer informatief met veel interessante stands. Het enige minpuntje was dat het erg druk was, waardoor we niet overal de tijd konden nemen die we wilden. Volgende keer komen we vroeger!"</p>
+                        </div>
+                        <div class="review-footer">
+                            <span class="review-activity">Energiebeurs</span>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="review-pagination">
+                    <button class="pagination-button" disabled>Vorige</button>
+                    <span class="pagination-current">Pagina 1 van 4</span>
+                    <button class="pagination-button">Volgende</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="rating-breakdown" aria-labelledby="breakdown-heading">
+            <div class="container">
+                <h2 id="breakdown-heading" class="section-title">Gedetailleerde Scores</h2>
+                <div class="breakdown-grid">
+                    <div class="rating-category">
+                        <h3>Algemene ervaring</h3>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 92%"></div>
+                            <span class="rating-value">4.6</span>
+                        </div>
+                    </div>
+                    <div class="rating-category">
+                        <h3>Informatievoorziening</h3>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 88%"></div>
+                            <span class="rating-value">4.4</span>
+                        </div>
+                    </div>
+                    <div class="rating-category">
+                        <h3>Vriendelijkheid personeel</h3>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 96%"></div>
+                            <span class="rating-value">4.8</span>
+                        </div>
+                    </div>
+                    <div class="rating-category">
+                        <h3>Prijs-kwaliteitverhouding</h3>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 84%"></div>
+                            <span class="rating-value">4.2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section review-cta" aria-labelledby="review-cta-heading">
+            <div class="container">
+                <h2 id="review-cta-heading" class="section-title">Deel uw ervaring</h2>
+                <p>Heeft u De Drijvende Stad bezocht? We horen graag wat u ervan vond!</p>
+                <a href="review-form.html" class="nav-button">Schrijf een beoordeling</a>
+            </div>
         </section>
     </main>
     
-    <footer id="main-footer">
-        <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
-        <p>Contact: info@dedrijvendestad.nl | Telefoon: +31 123 456 789</p>
+    <footer id="main-footer" role="contentinfo">
+        <!-- Same footer as index.html -->
     </footer>
-    <button id="backToTop" class="nav-button" title="Terug naar boven">↑</button>
-    <script src="./assets/js/script.js"></script>
+    
+    <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

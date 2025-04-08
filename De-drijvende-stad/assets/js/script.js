@@ -31,4 +31,26 @@ document.addEventListener("DOMContentLoaded", () => {
     backToTopButton.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector("#menuToggle");
+    const navList = document.querySelector(".nav-list");
+    menuToggle.addEventListener("click", () => {
+        navList.classList.toggle("visible");
+    });
+
+    // Accessibility: Close menu with Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && navList.classList.contains("visible")) {
+            navList.classList.remove("visible");
+        }
+    });
+
+    // Highlight active navbar item
+    const navLinks = document.querySelectorAll(".nav-list a");
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.setAttribute("aria-current", "page");
+        }
+    });
 });

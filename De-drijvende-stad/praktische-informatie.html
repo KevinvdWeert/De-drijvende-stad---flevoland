@@ -3,57 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praktische Informatie - De Drijvende Stad</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <meta name="description" content="Alle praktische informatie voor uw bezoek aan De Drijvende Stad: openingstijden, ticketprijzen, routebeschrijving en contactgegevens.">
+    <meta name="keywords" content="bezoek Drijvende Stad, openingstijden, ticketprijzen, routebeschrijving, contactgegevens, bereikbaarheid waterstad">
+    <meta name="author" content="De Drijvende Stad">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.dedrijvendestad.nl/praktische-informatie.html">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Praktische Informatie - Bezoekersinfo | De Drijvende Stad">
+    <meta property="og:description" content="Alle praktische informatie voor uw bezoek aan De Drijvende Stad in Flevoland.">
+    <meta property="og:image" content="https://www.dedrijvendestad.nl/assets/images/practical-info-social.jpg">
+    <meta property="og:url" content="https://www.dedrijvendestad.nl/praktische-informatie.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nl_NL">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Praktische Informatie - Bezoekersinfo | De Drijvende Stad">
+    <meta name="twitter:description" content="Alle praktische informatie voor uw bezoek aan De Drijvende Stad in Flevoland.">
+    <meta name="twitter:image" content="https://www.dedrijvendestad.nl/assets/images/practical-info-social.jpg">
+    
+    <title>Praktische Informatie - Bezoekersinfo | De Drijvende Stad</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "De Drijvende Stad",
+        "description": "Praktische informatie voor bezoekers van De Drijvende Stad",
+        "image": "https://www.dedrijvendestad.nl/assets/images/practical-info.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Waterweg 5",
+            "addressLocality": "Lelystad",
+            "postalCode": "8200 AB",
+            "addressCountry": "NL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "52.518536",
+            "longitude": "5.471422"
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+        },
+        "priceRange": "€8-16",
+        "telephone": "+31 123 456 789",
+        "email": "info@dedrijvendestad.nl",
+        "url": "https://www.dedrijvendestad.nl/praktische-informatie.html"
+    }
+    </script>
 </head>
-<body class="page-praktische-informatie">
-    <header id="main-header">
-        <h1 class="page-title">Praktische Informatie</h1>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
-                <li><a href="activiteiten.html">Activiteiten</a></li>
-                <li><a href="reviews.html">Beoordelingen</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-            </ul>
-        </nav>
+<body class="page-practical-info">
+    <a class="skip-link" href="#main-content">Direct naar inhoud</a>
+    
+    <header id="main-header" role="banner">
+        <div class="container">
+            <h1 class="page-title">De Drijvende Stad</h1>
+            <button id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="menu-icon">☰</span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="overzicht.html">Overzicht</a></li>
+                    <li><a href="activiteiten.html">Activiteiten</a></li>
+                    <li><a href="reviews.html">Beoordelingen</a></li>
+                    <li><a href="praktische-informatie.html" aria-current="page">Praktische Informatie</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main id="content">
-        <section>
-            <h2>Contactgegevens</h2>
-            <img src="assets/images/contact.jpg" alt="Contact" style="width: 100%; height: auto; border-radius: 10px; margin-bottom: 10px;">
-            <p>E-mailadres: info@drijvendestad.nl</p>
-            <p>Telefoonnummer: +31 (0)32 123 4567</p>
-            <p>Adres: Waterweg 5, 8200 AB Lelystad, Flevoland</p>
+    <main id="main-content" role="main">
+        <section class="hero-section practical-hero" aria-labelledby="practical-heading">
+            <div class="container">
+                <h1 id="practical-heading">Praktische Informatie</h1>
+                <p class="hero-text">Alles wat u nodig heeft voor een soepel bezoek aan De Drijvende Stad</p>
+            </div>
         </section>
-        <section>
-            <h2>Openingstijden</h2>
-            <ul>
-                <li>Maandag t/m vrijdag: 09:00 - 17:00</li>
-                <li>Zaterdag en zondag: 10:00 - 18:00</li>
-            </ul>
+        
+        <section class="info-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="info-grid">
+                    <article class="info-card contact-card" aria-labelledby="contact-heading">
+                        <div class="card-icon">📧</div>
+                        <h2 id="contact-heading" class="section-title">Contactgegevens</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <p>info@drijvendestad.nl</p>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <p>+31 (0)32 123 4567</p>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <address>Waterweg 5<br>8200 AB Lelystad<br>Flevoland</address>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="info-card hours-card" aria-labelledby="hours-heading">
+                        <div class="card-icon">🕒</div>
+                        <h2 id="hours-heading" class="section-title">Openingstijden</h2>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">Maandag - Vrijdag</span>
+                                <span class="time">09:00 - 17:00</span>
+                            </li>
+                            <li>
+                                <span class="day">Zaterdag - Zondag</span>
+                                <span class="time">10:00 - 18:00</span>
+                            </li>
+                            <li class="note">
+                                <p>Gesloten op Koningsdag en eerste kerstdag</p>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Ticketprijzen</h2>
-            <ul>
-                <li>Volwassenen: €16,-</li>
-                <li>Kinderen (4-12 jaar): €8,-</li>
-                <li>Kinderen onder 4 jaar: Gratis</li>
-            </ul>
+        
+        <section class="pricing-section" aria-labelledby="pricing-heading">
+            <div class="container">
+                <h2 id="pricing-heading" class="section-title">Ticketprijzen</h2>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <h3>Volwassenen</h3>
+                        <p class="price">€16,-</p>
+                        <p class="age">18+ jaar</p>
+                    </div>
+                    <div class="price-card">
+                        <h3>Kinderen</h3>
+                        <p class="price">€8,-</p>
+                        <p class="age">4-17 jaar</p>
+                    </div>
+                    <div class="price-card">
+                        <h3>Peuters</h3>
+                        <p class="price">Gratis</p>
+                        <p class="age">0-3 jaar</p>
+                    </div>
+                    <div class="price-card highlight">
+                        <h3>Familiekaart</h3>
+                        <p class="price">€40,-</p>
+                        <p class="age">2 volw. + 2 kind.</p>
+                    </div>
+                </div>
+                <p class="pricing-note">* Groepskorting beschikbaar voor groepen van 10 personen of meer</p>
+            </div>
         </section>
-        <section>
-            <h2>Kaart</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+        
+        <section class="map-section" aria-labelledby="map-heading">
+            <div class="container">
+                <h2 id="map-heading" class="section-title">Onze Locatie</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.123456789012!2d5.471422!3d52.518536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzA2LjciTiA1wrAyOCcxNy4xIkU!5e0!3m2!1snl!2snl!4v1234567890123!5m2!1snl!2snl" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            title="Kaart met locatie van De Drijvende Stad"
+                            aria-label="Interactieve kaart met locatie van De Drijvende Stad"></iframe>
+                </div>
+                <div class="transport-options">
+                    <div class="transport-card">
+                        <h3>Met de auto</h3>
+                        <p>Parkeergelegenheid beschikbaar bij de ingang (€5 per dag)</p>
+                    </div>
+                    <div class="transport-card">
+                        <h3>Openbaar vervoer</h3>
+                        <p>Buslijn 123 vanaf Lelystad Centrum (halte Waterweg)</p>
+                    </div>
+                    <div class="transport-card">
+                        <h3>Per boot</h3>
+                        <p>Mogelijkheid om aan te meren bij onze gastensteiger</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading" class="section-title">Veelgestelde Vragen</h2>
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary>Is De Drijvende Stad toegankelijk voor mindervaliden?</summary>
+                        <p>Ja, onze faciliteiten zijn volledig toegankelijk voor bezoekers met beperkte mobiliteit. We hebben rolstoelvriendelijke paden en speciale voorzieningen in onze gebouwen.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Kunnen we onze eigen picknick meenemen?</summary>
+                        <p>Ja, er zijn verschillende picknickgebieden beschikbaar. We vragen wel om afval mee te nemen of in de daarvoor bestemde bakken te deponeren.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Zijn honden toegestaan?</summary>
+                        <p>Honden zijn welkom, maar moeten aangelijnd blijven. In de gebouwen zijn alleen assistentiehonden toegestaan.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is reserveren verplicht?</summary>
+                        <p>Reserveren is niet verplicht maar wel aanbevolen, vooral in het weekend en tijdens vakantieperiodes.</p>
+                    </details>
+                </div>
+            </div>
         </section>
     </main>
     
-    <footer id="main-footer">
-        <p>&copy; 2023 De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
-        <p>Contact: info@dedrijvendestad.nl | Telefoon: +31 123 456 789</p>
+    <footer id="main-footer" role="contentinfo">
+        <!-- Same footer as index.html -->
     </footer>
-    <button id="backToTop" class="nav-button" title="Terug naar boven">↑</button>
-    <script src="./assets/js/script.js"></script>
+    
+    <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
+    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
