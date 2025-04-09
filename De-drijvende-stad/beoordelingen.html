@@ -53,16 +53,12 @@
     <header id="main-header" role="banner">
         <div class="container">
             <h1 class="page-title">De Drijvende Stad</h1>
-            <button id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
-                <span class="menu-icon">☰</span>
-                <span class="sr-only">Menu</span>
-            </button>
             <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="overzicht.html">Overzicht</a></li>
                     <li><a href="activiteiten.html">Activiteiten</a></li>
-                    <li><a href="reviews.html" aria-current="page">Beoordelingen</a></li>
+                    <li><a href="beoordelingen.html" aria-current="page">Beoordelingen</a></li>
                     <li><a href="praktische-informatie.html">Praktische Informatie</a></li>
                 </ul>
             </nav>
@@ -236,7 +232,16 @@
     </main>
     
     <footer id="main-footer" role="contentinfo">
-        <!-- Same footer as index.html -->
+        <nav class="footer-nav" aria-label="Footer navigatie">
+            <h3>Snelle links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overzicht.html">Overzicht</a></li>
+                <li><a href="praktische-informatie.html">Praktische Info</a></li>
+                <li><a href="activiteiten.html">Activiteiten</a></li>
+                <li><a href="beoordelingen.html">Beoordelingen</a></li>
+            </ul>
+        </nav>
     </footer>
     
     <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>
