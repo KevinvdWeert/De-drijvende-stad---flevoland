@@ -1,42 +1,50 @@
+// Example: Display an alert when a button is clicked
 document.addEventListener("DOMContentLoaded", () => {
-    // Smooth scrolling for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: "smooth"
-                });
-            }
-        });
-    });
+    const button = document.querySelector("#alertButton");
 
-    // Ensure navbar is visible
-    const navbar = document.querySelector(".main-nav");
-    if (navbar) {
-        navbar.style.display = "flex"; // Ensure the navbar is displayed as a flex container
+    if (button) {
+        button.addEventListener("click", () => {
+            alert("Welkom bij De Drijvende Stad!");
+        });
     }
 
-    // Back to Top button functionality
-    const backToTopButton = document.querySelector("#backToTop");
-    if (backToTopButton) {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add("visible");
-            } else {
-                backToTopButton.classList.remove("visible");
-            }
-        });
-
-        backToTopButton.addEventListener("click", (e) => {
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
             e.preventDefault();
-            window.scrollTo({
-                top: 0,
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
                 behavior: "smooth"
             });
         });
-    }
+    });
+
+    // Back to Top button functionality
+    const backToTopButton = document.querySelector("#backToTop");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector("#menuToggle");
+    const navList = document.querySelector(".nav-list");
+    menuToggle.addEventListener("click", () => {
+        navList.classList.toggle("visible");
+    });
+
+    // Accessibility: Close menu with Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && navList.classList.contains("visible")) {
+            navList.classList.remove("visible");
+        }
+    });
 
     // Highlight active navbar item
     const navLinks = document.querySelectorAll(".nav-list a");
