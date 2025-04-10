@@ -68,6 +68,11 @@
     <header id="main-header" role="banner">
         <div class="container">
             <h1 class="page-title">De Drijvende Stad</h1>
+            <button id="menuToggle" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
@@ -115,7 +120,7 @@
                         </ul>
                     </div>
                     <div class="article-image">
-                        <img src="assets/images/history.jpg" alt="Historische ontwikkeling van De Drijvende Stad" width="600" height="400" loading="lazy">
+                        <img src="assets/img/2.png" alt="Historische ontwikkeling van De Drijvende Stad" width="600" height="400" loading="lazy">
                     </div>
                 </article>
             </div>
@@ -154,21 +159,21 @@
                 <h2 id="visit-heading" class="section-title">Waarom Ons Bezoeken?</h2>
                 <div class="visit-reasons">
                     <article class="reason-card">
-                        <img src="assets/images/innovation.jpg" alt="Innovatieve technologie in De Drijvende Stad" width="400" height="300" loading="lazy">
+                        <img src="assets/img/9.png" alt="Innovatieve technologie in De Drijvende Stad" width="400" height="300" loading="lazy">
                         <div class="card-content">
                             <h3>Innovatie Ontdekken</h3>
                             <p>Ervaar de toekomst van wonen en bouwen met onze baanbrekende watertechnologieën en duurzame oplossingen.</p>
                         </div>
                     </article>
                     <article class="reason-card">
-                        <img src="assets/images/nature.jpg" alt="Natuur in De Drijvende Stad" width="400" height="300" loading="lazy">
+                        <img src="assets/img/7.png" alt="Natuur in De Drijvende Stad" width="400" height="300" loading="lazy">
                         <div class="card-content">
                             <h3>Natuurbeleving</h3>
                             <p>Geniet van de unieke symbiose tussen architectuur en waternatuur in ons ecologisch evenwichtig systeem.</p>
                         </div>
                     </article>
                     <article class="reason-card">
-                        <img src="assets/images/experience.jpg" alt="Beleving in De Drijvende Stad" width="400" height="300" loading="lazy">
+                        <img src="assets/img/8.png" alt="Beleving in De Drijvende Stad" width="400" height="300" loading="lazy">
                         <div class="card-content">
                             <h3>Unieke Ervaring</h3>
                             <p>Maak een boottocht rond de stad en ervaar zelf hoe het is om op het water te leven.</p>
@@ -191,16 +196,57 @@
     </main>
     
     <footer id="main-footer" role="contentinfo">
-        <nav class="footer-nav" aria-label="Footer navigatie">
-            <h3>Snelle links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-                <li><a href="praktische-informatie.html">Praktische Info</a></li>
-                <li><a href="activiteiten.html">Activiteiten</a></li>
-                <li><a href="beoordelingen.html">Beoordelingen</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Over De Drijvende Stad</h3>
+                    <p>Een innovatief project in Flevoland dat laat zien hoe we in harmonie met het water kunnen leven en werken.</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigatie">
+                    <h3>Snelle links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="overzicht.html">Overzicht</a></li>
+                        <li><a href="praktische-informatie.html">Praktische Info</a></li>
+                        <li><a href="activiteiten.html">Activiteiten</a></li>
+                        <li><a href="beoordelingen.html">Beoordelingen</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-contact">
+                    <h3>Contactgegevens</h3>
+                    <address>
+                        Waterweg 5<br>
+                        8200 AB Lelystad<br>
+                        Flevoland, Nederland
+                    </address>
+                    <p>
+                        <a href="tel:+31123456789">+31 123 456 789</a><br>
+                        <a href="mailto:info@dedrijvendestad.nl">info@dedrijvendestad.nl</a>
+                    </p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Volg ons</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dedrijvendestad" aria-label="Facebook"><span class="sr-only">Facebook</span>f</a></li>
+                        <li><a href="https://instagram.com/dedrijvendestad" aria-label="Instagram"><span class="sr-only">Instagram</span>📷</a></li>
+                        <li><a href="https://twitter.com/dedrijvendestad" aria-label="Twitter"><span class="sr-only">Twitter</span>𝕏</a></li>
+                        <li><a href="https://linkedin.com/company/dedrijvendestad" aria-label="LinkedIn"><span class="sr-only">LinkedIn</span>in</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
+                <ul class="legal-links">
+                    <li><a href="privacy.html">Privacybeleid</a></li>
+                    <li><a href="cookies.html">Cookiebeleid</a></li>
+                    <li><a href="voorwaarden.html">Algemene Voorwaarden</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     
     <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>

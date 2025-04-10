@@ -53,6 +53,7 @@
     <header id="main-header" role="banner">
         <div class="container">
             <h1 class="page-title">De Drijvende Stad</h1>
+            <button id="menuToggle" aria-expanded="false">☰</button>
             <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hoofdmenu">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
@@ -72,116 +73,60 @@
                 <p class="hero-text">Wat zeggen anderen over hun tijd in De Drijvende Stad?</p>
             </div>
         </section>
-        
-        <section class="stats-section" aria-labelledby="stats-heading">
+        <section class="intro-section" aria-labelledby="intro-heading">
             <div class="container">
-                <h2 id="stats-heading" class="sr-only">Beoordelingsstatistieken</h2>
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-value">4.7</div>
-                        <div class="stat-label">Gemiddelde score</div>
-                        <div class="stars" aria-label="4.7 van de 5 sterren">
-                            ★★★★★
-                        </div>
-                        <div class="stat-note">op basis van 87 beoordelingen</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value">94%</div>
-                        <div class="stat-label">Aanbevelingspercentage</div>
-                        <div class="recommend-bar">
-                            <div class="recommend-fill" style="width: 94%"></div>
-                        </div>
-                        <div class="stat-note">zou ons aanbevelen</div>
-                    </div>
-                </div>
+                <h2 id="intro-heading" class="section-title">Waarom Beoordelingen Belangrijk Zijn</h2>
+                <p>Bij De Drijvende Stad geloven we in transparantie en openheid. Daarom delen we graag de ervaringen van onze bezoekers. Uw feedback helpt ons om onze diensten te verbeteren en toekomstige bezoekers een nog betere ervaring te bieden.</p>
             </div>
-        </section>
-        
+
         <section class="reviews-section" aria-labelledby="reviews-list-heading">
             <div class="container">
-                <h2 id="reviews-list-heading" class="section-title">Recentie Beoordelingen</h2>
+                <h2 id="reviews-list-heading" class="section-title">Recente Beoordelingen</h2>
                 <div class="reviews-grid">
-                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="review-header">
-                            <div class="review-author" itemprop="author">Isabelle van den Berg</div>
-                            <div class="review-date" itemprop="datePublished" content="2025-01-15">15 januari 2025</div>
-                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                                <meta itemprop="ratingValue" content="5">
-                                <meta itemprop="bestRating" content="5">
-                                <span aria-hidden="true">★★★★★</span>
-                                <span class="sr-only">5 van de 5 sterren</span>
-                            </div>
-                        </div>
-                        <div class="review-content" itemprop="reviewBody">
-                            <p>"De boottocht was geweldig! Het is indrukwekkend om te zien hoe technologie en natuur samenkomen in dit unieke project. Onze gids Eva wist ontzettend veel te vertellen over de duurzame oplossingen die zijn toegepast."</p>
-                        </div>
-                        <div class="review-footer">
+                    <article class="review-card">
+                        <header class="review-header">
+                            <h3 class="review-author">Isabelle van den Berg</h3>
+                            <time class="review-date" datetime="2025-01-15">15 januari 2025</time>
+                            <div class="review-rating">★★★★★</div>
+                        </header>
+                        <p class="review-content">"De boottocht was geweldig! Het is indrukwekkend om te zien hoe technologie en natuur samenkomen in dit unieke project."</p>
+                        <footer class="review-footer">
                             <span class="review-activity">Boottocht Rond de Stad</span>
-                        </div>
+                        </footer>
                     </article>
-                    
-                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="review-header">
-                            <div class="review-author" itemprop="author">Joris Smits</div>
-                            <div class="review-date" itemprop="datePublished" content="2025-01-10">10 januari 2025</div>
-                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                                <meta itemprop="ratingValue" content="3">
-                                <meta itemprop="bestRating" content="5">
-                                <span aria-hidden="true">★★★☆☆</span>
-                                <span class="sr-only">3 van de 5 sterren</span>
-                            </div>
-                        </div>
-                        <div class="review-content" itemprop="reviewBody">
-                            <p>"De duurzame bouw workshop was interessant, maar ik had graag wat meer diepgang gehad over de technische aspecten. Het was vooral gericht op beginners. De locatie was echter prachtig en de koffie was uitstekend!"</p>
-                        </div>
-                        <div class="review-footer">
+                    <article class="review-card">
+                        <header class="review-header">
+                            <h3 class="review-author">Joris Smits</h3>
+                            <time class="review-date" datetime="2025-01-10">10 januari 2025</time>
+                            <div class="review-rating">★★★☆☆</div>
+                        </header>
+                        <p class="review-content">"De duurzame bouw workshop was interessant, maar ik had graag wat meer diepgang gehad over de technische aspecten. Het was vooral gericht op beginners. De locatie was echter prachtig en de koffie was uitstekend!"</p>
+                        <footer class="review-footer">
                             <span class="review-activity">Duurzaam Bouwen Workshop</span>
-                        </div>
+                        </footer>
                     </article>
-                    
-                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="review-header">
-                            <div class="review-author" itemprop="author">Sanne en Mark de Wit</div>
-                            <div class="review-date" itemprop="datePublished" content="2025-01-05">5 januari 2025</div>
-                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                                <meta itemprop="ratingValue" content="5">
-                                <meta itemprop="bestRating" content="5">
-                                <span aria-hidden="true">★★★★★</span>
-                                <span class="sr-only">5 van de 5 sterren</span>
-                            </div>
-                        </div>
-                        <div class="review-content" itemprop="reviewBody">
-                            <p>"Wat een unieke plek! De stad is echt de toekomst van wonen. We hebben genoten van elke minuut. Het informatiecentrum is zeer compleet en de medewerkers zijn vriendelijk en behulpzaam. Zeker een aanrader voor wie geïnteresseerd is in innovatie en duurzaamheid."</p>
-                        </div>
-                        <div class="review-footer">
+                    <article class="review-card">
+                        <header class="review-header">
+                            <h3 class="review-author">Sanne en Mark de Wit</h3>
+                            <time class="review-date" datetime="2025-01-05">5 januari 2025</time>
+                            <div class="review-rating">★★★★★</div>
+                        </header>
+                        <p class="review-content">"Wat een unieke plek! De stad is echt de toekomst van wonen. We hebben genoten van elke minuut. Het informatiecentrum is zeer compleet en de medewerkers zijn vriendelijk en behulpzaam. Zeker een aanrader voor wie geïnteresseerd is in innovatie en duurzaamheid."</p>
+                        <footer class="review-footer">
                             <span class="review-activity">Algemeen bezoek</span>
-                        </div>
+                        </footer>
                     </article>
-                    
-                    <article class="review-card" itemscope itemtype="https://schema.org/Review">
-                        <div class="review-header">
-                            <div class="review-author" itemprop="author">Thomas Janssen</div>
-                            <div class="review-date" itemprop="datePublished" content="2024-12-28">28 december 2024</div>
-                            <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                                <meta itemprop="ratingValue" content="4">
-                                <meta itemprop="bestRating" content="5">
-                                <span aria-hidden="true">★★★★☆</span>
-                                <span class="sr-only">4 van de 5 sterren</span>
-                            </div>
-                        </div>
-                        <div class="review-content" itemprop="reviewBody">
-                            <p>"De energiebeurs was zeer informatief met veel interessante stands. Het enige minpuntje was dat het erg druk was, waardoor we niet overal de tijd konden nemen die we wilden. Volgende keer komen we vroeger!"</p>
-                        </div>
-                        <div class="review-footer">
+                    <article class="review-card">
+                        <header class="review-header">
+                            <h3 class="review-author">Thomas Janssen</h3>
+                            <time class="review-date" datetime="2024-12-28">28 december 2024</time>
+                            <div class="review-rating">★★★★☆</div>
+                        </header>
+                        <p class="review-content">"De energiebeurs was zeer informatief met veel interessante stands. Het enige minpuntje was dat het erg druk was, waardoor we niet overal de tijd konden nemen die we wilden. Volgende keer komen we vroeger!"</p>
+                        <footer class="review-footer">
                             <span class="review-activity">Energiebeurs</span>
-                        </div>
+                        </footer>
                     </article>
-                </div>
-                
-                <div class="review-pagination">
-                    <button class="pagination-button" disabled>Vorige</button>
-                    <span class="pagination-current">Pagina 1 van 4</span>
-                    <button class="pagination-button">Volgende</button>
                 </div>
             </div>
         </section>
@@ -232,16 +177,57 @@
     </main>
     
     <footer id="main-footer" role="contentinfo">
-        <nav class="footer-nav" aria-label="Footer navigatie">
-            <h3>Snelle links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="overzicht.html">Overzicht</a></li>
-                <li><a href="praktische-informatie.html">Praktische Info</a></li>
-                <li><a href="activiteiten.html">Activiteiten</a></li>
-                <li><a href="beoordelingen.html">Beoordelingen</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Over De Drijvende Stad</h3>
+                    <p>Een innovatief project in Flevoland dat laat zien hoe we in harmonie met het water kunnen leven en werken.</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigatie">
+                    <h3>Snelle links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="overzicht.html">Overzicht</a></li>
+                        <li><a href="praktische-informatie.html">Praktische Info</a></li>
+                        <li><a href="activiteiten.html">Activiteiten</a></li>
+                        <li><a href="beoordelingen.html">Beoordelingen</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-contact">
+                    <h3>Contactgegevens</h3>
+                    <address>
+                        Waterweg 5<br>
+                        8200 AB Lelystad<br>
+                        Flevoland, Nederland
+                    </address>
+                    <p>
+                        <a href="tel:+31123456789">+31 123 456 789</a><br>
+                        <a href="mailto:info@dedrijvendestad.nl">info@dedrijvendestad.nl</a>
+                    </p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Volg ons</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dedrijvendestad" aria-label="Facebook"><span class="sr-only">Facebook</span>f</a></li>
+                        <li><a href="https://instagram.com/dedrijvendestad" aria-label="Instagram"><span class="sr-only">Instagram</span>📷</a></li>
+                        <li><a href="https://twitter.com/dedrijvendestad" aria-label="Twitter"><span class="sr-only">Twitter</span>𝕏</a></li>
+                        <li><a href="https://linkedin.com/company/dedrijvendestad" aria-label="LinkedIn"><span class="sr-only">LinkedIn</span>in</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> De Drijvende Stad - Flevoland. Alle rechten voorbehouden.</p>
+                <ul class="legal-links">
+                    <li><a href="privacy.html">Privacybeleid</a></li>
+                    <li><a href="cookies.html">Cookiebeleid</a></li>
+                    <li><a href="voorwaarden.html">Algemene Voorwaarden</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
     
     <button id="backToTop" class="back-to-top" title="Terug naar boven" aria-label="Terug naar boven">↑</button>

@@ -34,23 +34,71 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Mobile menu toggle
     const menuToggle = document.querySelector("#menuToggle");
-    const navList = document.querySelector(".nav-list");
-    menuToggle.addEventListener("click", () => {
-        navList.classList.toggle("visible");
+    const navList = document.querySelector("#main-nav");
+    const body = document.querySelector("body");
+
+    if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+            const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+            menuToggle.setAttribute("aria-expanded", !isExpanded);
+            menuToggle.classList.toggle("open");
+            navList.classList.toggle("visible");
+            body.classList.toggle("menu-open");
+        });
+    }
+
+    // Close menu when clicking outside the menu
+    document.addEventListener("click", (event) => {
+        if (navList && menuToggle && navList.classList.contains("visible") && !event.target.closest("#main-nav") && !event.target.closest("#menuToggle")) {
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.classList.remove("open");
+            navList.classList.remove("visible");
+            body.classList.remove("menu-open");
+        }
     });
 
-    // Accessibility: Close menu with Escape key
+    // Prevent the above event from firing when clicking inside the menu
+    navList.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+
+    // Close menu with Escape key
     document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && navList.classList.contains("visible")) {
+        if (navList && navList.classList.contains("visible") && e.key === "Escape") {
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.classList.remove("open");
             navList.classList.remove("visible");
+            body.classList.remove("menu-open");
         }
+    });
+
+    // Close menu after clicking a link (mobile)
+    const navLinks = document.querySelectorAll(".nav-list a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (window.innerWidth <= 768 && navList && menuToggle) {
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.classList.remove("open");
+                navList.classList.remove("visible");
+                body.classList.remove("menu-open");
+            }
+        });
     });
 
     // Highlight active navbar item
-    const navLinks = document.querySelectorAll(".nav-list a");
-    navLinks.forEach(link => {
+    const navLinksAll = document.querySelectorAll(".nav-list a");
+    navLinksAll.forEach(link => {
         if (link.href === window.location.href) {
             link.setAttribute("aria-current", "page");
         }
+    });
+
+    // Adjust fade-in effect for faster image loading
+    document.querySelectorAll("img").forEach((img) => {
+        img.style.opacity = "0";
+        img.style.transition = "opacity 0.2s ease-in-out"; // Reduced duration
+        img.addEventListener("load", () => {
+            img.style.opacity = "1";
+        });
     });
 });
