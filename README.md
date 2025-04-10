@@ -19,7 +19,7 @@ De-drijvende-stad
 ## Setup Instructions
 1. Clone the repository or download the project files.
 2. Ensure you have a local server environment set up (e.g., XAMPP, WAMP).
-3. Place the project folder in the server's root directory (e.g., `c:\xampp\htdocs\Web\Examens\De drijvende stad - flevoland\`).
+3. Place the project folder in the server's root directory (e.g., `c:\xampp\htdocs\De drijvende stad - flevoland\`).
 4. Open your web browser and navigate to `http://localhost/De-drijvende-stad/index.html` to view the website.
 
 ## Usage
